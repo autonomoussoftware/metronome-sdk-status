@@ -1,0 +1,52 @@
+{
+  "name": "metronome-sdk-status",
+  "version": "1.0.0",
+  "description": "Auction and converter status functions for the Metronome SDK",
+  "keywords": [
+    "auction",
+    "converter",
+    "erc20",
+    "ethereum",
+    "metronome",
+    "sdk",
+    "status"
+  ],
+  "license": "MIT",
+  "author": "Gabriel Montes <gabriel@bloq.com>",
+  "files": [
+    "src"
+  ],
+  "main": "src/index.js",
+  "repository": "autonomoussoftware/metronome-sdk-status",
+  "scripts": {
+    "check": "dependency-check . && dependency-check . --unused --no-dev",
+    "check:outdated": "npm-check -i husky",
+    "coverage": "nyc --lines 95 --functions 95 --branches 95 --reporter=lcov --reporter=text npm test",
+    "lint": "eslint --cache .",
+    "prepublishOnly": "tag-matches",
+    "test": "mocha"
+  },
+  "dependencies": {
+    "web3-utils": "1.0.0-beta.37"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "check-tag-matches": "^1.0.0",
+    "dependency-check": "^3.3.0",
+    "eslint": "^6.0.1",
+    "eslint-config-bloq": "^2.1.0",
+    "eslint-config-standard": "^12.0.0",
+    "eslint-plugin-import": "^2.16.0",
+    "eslint-plugin-jsdoc": "^10.0.3",
+    "eslint-plugin-mocha": "^5.3.0",
+    "eslint-plugin-node": "^9.1.0",
+    "eslint-plugin-prefer-arrow": "^1.1.5",
+    "eslint-plugin-promise": "^4.0.1",
+    "eslint-plugin-require-path-exists": "^1.1.9",
+    "eslint-plugin-standard": "^4.0.0",
+    "husky": "^3.0.0",
+    "mocha": "^6.1.4",
+    "npm-check": "^5.9.0",
+    "nyc": "^14.1.1"
+  }
+}

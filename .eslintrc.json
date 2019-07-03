@@ -1,0 +1,10 @@
+{
+  "extends": [
+    "bloq",
+    "bloq/controvertial"
+  ],
+  "root": true,
+  "rules": {
+    "require-jsdoc": "off"
+  }
+}
