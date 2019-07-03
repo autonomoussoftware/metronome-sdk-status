@@ -102,7 +102,9 @@ An object representing the auction status.
 | --------------------- | ------------------- | ------------------------------------------- |
 | currAuction           | <code>string</code> | The auction number.                         |
 | currentAuctionPrice   | <code>string</code> | The MET price.                              |
+| currTick              | <code>string</code> | The current tick.                           |
 | dailyAuctionStartTime | <code>number</code> | The daily auctions start time.              |
+| dailyMintable         | <code>string</code> | The amount at the start of the auction.     |
 | genesisTime           | <code>number</code> | The ISA start time.                         |
 | lastPurchasePrice     | <code>string</code> | The last purchase price.                    |
 | lastPurchaseTime      | <code>number</code> | The last purchase time.                     |

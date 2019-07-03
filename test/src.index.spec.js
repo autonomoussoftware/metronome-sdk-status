@@ -35,9 +35,11 @@ describe('Metronome Status', function () {
     const data = {
       dailyAuctionStartTime: '1529884800', // 2018-06-25T00:00:00.000Z
       heartbeat: {
+        _dailyMintable: '1000000000000000000',
         _lastPurchasePrice: '1000000000000000000',
         currAuction: '373', // 2018-07-02
         currentAuctionPrice: '500000000000000000',
+        currTick: '545818', // 2019-07-02T00:59:00.000Z
         genesisGMT: '1529280060', // 2018-06-18T00:01:00.000Z
         minting: '1000000000000000000',
         nextAuctionGMT: '1562112000', // 2019-07-03T00:00:00.000Z
@@ -51,7 +53,9 @@ describe('Metronome Status', function () {
       status.should.deep.equal({
         currAuction: '373',
         currentAuctionPrice: '500000000000000000',
+        currTick: '545818',
         dailyAuctionStartTime: 1529884800,
+        dailyMintable: '1000000000000000000',
         genesisTime: 1529280060,
         lastPurchasePrice: '1000000000000000000',
         lastPurchaseTime: 1561943700,
@@ -66,9 +70,11 @@ describe('Metronome Status', function () {
     const data = {
       dailyAuctionStartTime: '1529884800', // 2018-06-25T00:00:00.000Z
       heartbeat: {
+        _dailyMintable: '1000000000000000000',
         _lastPurchasePrice: '1000000000000000000',
         currAuction: '373', // 2018-07-02
         currentAuctionPrice: '500000000000000000',
+        currTick: '545820', // 2019-07-02T01:01:00.000Z
         genesisGMT: '1529280060', // 2018-06-18T00:01:00.000Z
         minting: '1000000000000000000',
         nextAuctionGMT: '1562112000', // 2019-07-03T00:00:00.000Z
@@ -82,7 +88,9 @@ describe('Metronome Status', function () {
       status.should.deep.equal({
         currAuction: '373',
         currentAuctionPrice: '500000000000000000',
+        currTick: '545820',
         dailyAuctionStartTime: 1529884800,
+        dailyMintable: '1000000000000000000',
         genesisTime: 1529280060,
         lastPurchasePrice: '1000000000000000000',
         lastPurchaseTime: 1562029200,
@@ -97,9 +105,11 @@ describe('Metronome Status', function () {
     const data = {
       dailyAuctionStartTime: '1529884800', // 2018-06-25T00:00:00.000Z
       heartbeat: {
+        _dailyMintable: '1000000000000000000',
         _lastPurchasePrice: '1000000000000000000',
         currAuction: '373', // 2018-07-02
         currentAuctionPrice: '500000000000000000',
+        currTick: '545839', // 2019-07-02T01:20:00.000Z
         genesisGMT: '1529280060', // 2018-06-18T00:01:00.000Z
         minting: '1000000000000000000',
         nextAuctionGMT: '1562112000', // 2019-07-03T00:00:00.000Z
@@ -113,7 +123,9 @@ describe('Metronome Status', function () {
       status.should.deep.equal({
         currAuction: '373',
         currentAuctionPrice: '500000000000000000',
+        currTick: '545839',
         dailyAuctionStartTime: 1529884800000,
+        dailyMintable: '1000000000000000000',
         genesisTime: 1529280060000,
         lastPurchasePrice: '1000000000000000000',
         lastPurchaseTime: 1562030100000,

@@ -53,7 +53,9 @@ function createMetronomeStatus (contracts) {
    * @typedef {object} AuctionStatus
    * @property {string} currAuction The auction number.
    * @property {string} currentAuctionPrice The MET price.
+   * @property {string} currTick The current tick.
    * @property {number} dailyAuctionStartTime The daily auctions start time.
+   * @property {string} dailyMintable The amount at the start of the auction.
    * @property {number} genesisTime The ISA start time.
    * @property {string} lastPurchasePrice The last purchase price.
    * @property {number} lastPurchaseTime The last purchase time.
@@ -83,8 +85,10 @@ function createMetronomeStatus (contracts) {
         ([
           dailyAuctionStartTime,
           {
+            _dailyMintable,
             _lastPurchasePrice,
             currAuction,
+            currTick,
             currentAuctionPrice,
             genesisGMT,
             minting,
@@ -97,7 +101,9 @@ function createMetronomeStatus (contracts) {
         ]) => ({
           currAuction,
           currentAuctionPrice,
+          currTick,
           dailyAuctionStartTime: maybeToMs(toInt(dailyAuctionStartTime)),
+          dailyMintable: _dailyMintable,
           genesisTime: maybeToMs(toInt(genesisGMT)),
           lastPurchasePrice: _lastPurchasePrice,
           lastPurchaseTime: maybeToMs(
