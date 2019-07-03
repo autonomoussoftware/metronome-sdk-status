@@ -1,6 +1,8 @@
 # metronome-sdk-status
 
 [![Build Status](https://travis-ci.com/autonomoussoftware/metronome-sdk-status.svg?branch=master)](https://travis-ci.com/autonomoussoftware/metronome-sdk-status)
+[![Code Style](https://img.shields.io/badge/code%20style-bloq-0063a6.svg)](https://github.com/bloq/eslint-config-bloq)
+[![Known Vulnerabilities](https://snyk.io/test/github/autonomoussoftware/metronome-sdk-status/badge.svg?targetFile=package.json)](https://snyk.io/test/github/autonomoussoftware/metronome-sdk-status?targetFile=package.json)
 
 Auction and converter status functions for the Metronome SDK.
 
