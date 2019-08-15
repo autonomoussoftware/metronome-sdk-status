@@ -93,6 +93,7 @@ function createMetronomeStatus (contracts) {
             genesisGMT,
             minting,
             nextAuctionGMT,
+            proceedsBal,
             totalMET
           },
           lastPurchaseTick,
@@ -113,6 +114,7 @@ function createMetronomeStatus (contracts) {
             ? minting
             : mintable,
           nextAuctionTime: maybeToMs(toInt(nextAuctionGMT)),
+          proceedsBal,
           totalMET
         })
       )

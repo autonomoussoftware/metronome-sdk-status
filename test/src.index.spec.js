@@ -10,7 +10,7 @@ function createMethods (names, data) {
   return names.reduce(function (all, name) {
     return {
       ...all,
-      ...{ [name]: () => ({ call: () => Promise.resolve(data[name]) }) }
+      [name]: () => ({ call: () => Promise.resolve(data[name]) })
     }
   }, {})
 }
@@ -43,6 +43,7 @@ describe('Metronome Status', function () {
         genesisGMT: '1529280060', // 2018-06-18T00:01:00.000Z
         minting: '1000000000000000000',
         nextAuctionGMT: '1562112000', // 2019-07-03T00:00:00.000Z
+        proceedsBal: '15000000000000000000000',
         totalMET: '10000000000000000000'
       },
       lastPurchaseTick: '544394', // 2019-07-01T01:15:00.000Z
@@ -61,6 +62,7 @@ describe('Metronome Status', function () {
         lastPurchaseTime: 1561943700,
         minting: '1000000000000000000',
         nextAuctionTime: 1562112000,
+        proceedsBal: '15000000000000000000000',
         totalMET: '10000000000000000000'
       })
     })
@@ -78,6 +80,7 @@ describe('Metronome Status', function () {
         genesisGMT: '1529280060', // 2018-06-18T00:01:00.000Z
         minting: '1000000000000000000',
         nextAuctionGMT: '1562112000', // 2019-07-03T00:00:00.000Z
+        proceedsBal: '15000000000000000000000',
         totalMET: '10000000000000000000'
       },
       lastPurchaseTick: '545819', // 2019-07-02T01:00:00.000Z
@@ -96,6 +99,7 @@ describe('Metronome Status', function () {
         lastPurchaseTime: 1562029200,
         minting: '500000000000000000',
         nextAuctionTime: 1562112000,
+        proceedsBal: '15000000000000000000000',
         totalMET: '10000000000000000000'
       })
     })
@@ -113,6 +117,7 @@ describe('Metronome Status', function () {
         genesisGMT: '1529280060', // 2018-06-18T00:01:00.000Z
         minting: '1000000000000000000',
         nextAuctionGMT: '1562112000', // 2019-07-03T00:00:00.000Z
+        proceedsBal: '15000000000000000000000',
         totalMET: '10000000000000000000'
       },
       lastPurchaseTick: '545834', // 2019-07-02T01:15:00.000Z
@@ -131,6 +136,7 @@ describe('Metronome Status', function () {
         lastPurchaseTime: 1562030100000,
         minting: '0',
         nextAuctionTime: 1562112000000,
+        proceedsBal: '15000000000000000000000',
         totalMET: '10000000000000000000'
       })
     })
