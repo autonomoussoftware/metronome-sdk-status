@@ -27,7 +27,7 @@
     "test": "mocha"
   },
   "dependencies": {
-    "web3-utils": "1.0.0-beta.37"
+    "web3-utils": "1.0.0"
   },
   "devDependencies": {
     "chai": "^4.2.0",
