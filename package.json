@@ -1,6 +1,6 @@
 {
   "name": "metronome-sdk-status",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "Auction and converter status functions for the Metronome SDK",
   "keywords": [
     "auction",
