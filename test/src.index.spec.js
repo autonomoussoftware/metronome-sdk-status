@@ -6,7 +6,7 @@ chai.should()
 
 const createMetronomeStatus = require('..')
 
-function createMethods (names, data) {
+function createMethods(names, data) {
   return names.reduce(function (all, name) {
     return {
       ...all,

@@ -44,7 +44,7 @@ const isNextAuction = (lastPurchaseTick, currAuction) =>
  *                                                         Metronome contracts.
  * @returns {MetronomeStatusApi} The status getters.
  */
-function createMetronomeStatus (contracts) {
+function createMetronomeStatus(contracts) {
   const contractsPromise = Promise.resolve(contracts)
 
   /**

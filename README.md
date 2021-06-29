@@ -10,6 +10,8 @@ The status functions can be used as part of the Metronome SDK or standalone, pro
 
 ## Installation
 
+Minimum requirement of node is v12
+
 ```shell
 npm install metronome-sdk-status
 ```
